@@ -1,0 +1,5 @@
+Hypothesis,Test,Group A,Group B,T-Statistic,P-Value,Alpha,Result,Conclusion
+H1: Mobile App AOV > Website AOV,Independent T-Test (one-tailed),"Mobile App (n=1054, mean=Rs.20,332.38)","Website (n=948, mean=Rs.18,513.43)",1.3869,0.0828,0.05,Not Significant,FAIL TO REJECT H0 — No significant difference
+H2: 36-45 age group AOV > 18-25 age group AOV,Independent T-Test (one-tailed),"36-45 (n=715, mean=Rs.20,640.76)","18-25 (n=470, mean=Rs.19,149.83)",0.7335,0.2317,0.05,Not Significant,FAIL TO REJECT H0 — No significant difference
+H3: Cancellation rate differs across acquisition channels,Chi-Squared Test of Independence,All acquisition channels,is_cancelled (0/1),1.9403,0.7467,0.05,Not Significant,FAIL TO REJECT H0 — No significant difference
+H4: October AOV > Other months AOV (Festive Season Effect),Independent T-Test (one-tailed),"October (n=277, mean=Rs.23,711.86)","Other months (n=2954, mean=Rs.19,085.80)",2.4337,0.0075,0.05,Significant,REJECT H0 — October revenue is significantly higher

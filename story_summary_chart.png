@@ -1,0 +1,79 @@
+# Task 4 — Data Storytelling & Statistical Validation
+**ApexPlanet Software Pvt. Ltd. | Data Analytics Internship (60 Days)**
+
+---
+
+## The Business Story
+
+### Chapter 1 — Setting the Scene
+We analysed 5,000 e-commerce orders across 2023-2024 generating a total revenue of Rs.6.29 Crore.
+The data reveals a business with strong fundamentals but clear opportunities for growth.
+
+### Chapter 2 — The Problem
+- Month-1 customer retention is only 6% — most customers never reorder
+- Beauty category has a 10.4% return rate — hurting net revenue
+- Cancellation rate stands at 10.1% — revenue is being lost before delivery
+
+### Chapter 3 — The Opportunity
+- October shows a consistent revenue spike — festive season campaigns need investment
+- Mobile App drives the most revenue (Rs.2.14Cr) — yet Website lags at Rs.1.76Cr
+- 36-45 age group has the highest AOV (Rs.20,641) — premium segment to target
+
+### Chapter 4 — The Recommendations
+1. Launch a 30-day post-purchase email sequence to boost Month-1 retention from 6% to 15%
+2. Review Beauty product descriptions to reduce 10.4% return rate
+3. Invest in Mobile App UX and push notifications
+4. Plan festive season campaigns 4 weeks before October
+5. Create premium bundles targeting the 36-45 age group
+
+### Chapter 5 — The Call to Action
+Focus on retention first. Increasing Month-1 retention from 6% to 12% would double
+repeat revenue — the single highest-impact action available.
+
+---
+
+## Hypothesis Testing Results
+
+| Hypothesis                                                 | Test                             | Group A                                | Group B                                  |   T-Statistic |   P-Value |   Alpha | Result          | Conclusion                                          |
+|:-----------------------------------------------------------|:---------------------------------|:---------------------------------------|:-----------------------------------------|--------------:|----------:|--------:|:----------------|:----------------------------------------------------|
+| H1: Mobile App AOV > Website AOV                           | Independent T-Test (one-tailed)  | Mobile App (n=1054, mean=Rs.20,332.38) | Website (n=948, mean=Rs.18,513.43)       |        1.3869 |    0.0828 |    0.05 | Not Significant | FAIL TO REJECT H0 — No significant difference       |
+| H2: 36-45 age group AOV > 18-25 age group AOV              | Independent T-Test (one-tailed)  | 36-45 (n=715, mean=Rs.20,640.76)       | 18-25 (n=470, mean=Rs.19,149.83)         |        0.7335 |    0.2317 |    0.05 | Not Significant | FAIL TO REJECT H0 — No significant difference       |
+| H3: Cancellation rate differs across acquisition channels  | Chi-Squared Test of Independence | All acquisition channels               | is_cancelled (0/1)                       |        1.9403 |    0.7467 |    0.05 | Not Significant | FAIL TO REJECT H0 — No significant difference       |
+| H4: October AOV > Other months AOV (Festive Season Effect) | Independent T-Test (one-tailed)  | October (n=277, mean=Rs.23,711.86)     | Other months (n=2954, mean=Rs.19,085.80) |        2.4337 |    0.0075 |    0.05 | Significant     | REJECT H0 — October revenue is significantly higher |
+
+---
+
+## Statistical Interpretation
+
+### H1 — Mobile App AOV vs Website AOV (T-Test)
+- Mobile App mean: Rs.20,332.38 | Website mean: Rs.18,513.43
+- p-value: 0.0828 | Not statistically significant
+- Business conclusion: No significant AOV difference between channels
+
+### H2 — 36-45 vs 18-25 AOV (T-Test)
+- 36-45 mean: Rs.20,640.76 | 18-25 mean: Rs.19,149.83
+- p-value: 0.2317 | Not statistically significant
+- Business conclusion: Age groups spend similarly on average
+
+### H3 — Cancellation Rate by Channel (Chi-Squared)
+- Chi2 statistic: 1.9403 | p-value: 0.7467
+- No significant difference in cancellation across channels
+
+### H4 — October AOV vs Other Months (T-Test)
+- October mean: Rs.23,711.86 | Other months mean: Rs.19,085.80
+- p-value: 0.0075 | Statistically significant — October spike is real
+
+---
+
+## Deliverables
+- [x] outputs/story_revenue_journey.png
+- [x] outputs/story_customer_funnel.png
+- [x] outputs/story_opportunity_matrix.png
+- [x] outputs/hypothesis_testing_charts.png
+- [x] outputs/story_summary_chart.png
+- [x] outputs/hypothesis_testing_summary.csv
+- [x] outputs/task4_story_report.md
+
+---
+
+*ApexPlanet Software Pvt. Ltd. | www.apexplanet.in*
