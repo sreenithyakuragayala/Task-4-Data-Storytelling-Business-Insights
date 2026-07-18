@@ -92,5 +92,5 @@ This task demonstrates how data findings can be structured into a compelling bus
 ---
 
 ## 👩‍💻 Author
-Devi Sri
+Sreenithya Kuragayala
 ApexPlanet Data Analytics Internship
